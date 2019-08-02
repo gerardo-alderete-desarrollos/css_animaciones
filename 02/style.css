@@ -1,0 +1,35 @@
+.circle {
+    width: 200px;
+    height: 300px;
+    border-radius: 50%;
+    background: red;
+    border: 5px solid #000;
+    
+}
+
+
+.circle:first-child {
+    /* animation: circle1 1s infinite alternate; */
+    
+}
+
+
+
+.circle:last-child{
+    animation: circle2 1s infinite alternate linear;  
+
+    background: green;
+    will-change: transform;
+}
+@keyframes circle1 {
+    to {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@keyframes circle2 {
+    to {
+        transform: scale(1.5);
+    }
+}
